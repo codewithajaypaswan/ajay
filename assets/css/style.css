@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "Agustina";
+  src: url(../fonts/Agustina.woff);
+}
+/*CSS variable declaration for light/dark mode*/
+html[data-theme="light"] {
+  --bg-mybtn: red;
+  --bg-nav:black;
+  --bg-nav-img: black;
+  --bg-footer:#DDE1EC;
+  --bg: #ffffff;
+  --text: #191919;
+  --text-color: #6c757d;
+  --col-icon: black;
+  --col-bd-radius:rgb(2, 2, 2);
+  --col-box-shadow:#000000 2px 2px 4px,
+  #4D4D4D -2px -2px 4px;
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px,
+ inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon:transparent;
+  --bg-icon: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:#24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --shadow-col: rgba(0, 0, 0, 0.3);
+
+}
+
+html[data-theme="dark"] {
+  --bg-mybtn: rgb(230, 109, 129);
+  --bg-nav: #6617cb;
+  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg-footer:linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg: #191919;
+  --text: #ffffff;
+  --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
+  --col-icon:white;
+  --col-bd-radius:black;
+  --col-bd-icon:transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
+  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px,
+ inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:  #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --col-white: #fff;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+
+/* Top button */
+
+/* smooth scrolling to top */
+html {
+  scroll-behavior: smooth;
+}
+
+/*starting part of every page*/
+
+.edu{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.heading {
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+
+}
+
+.fa-graduation-cap:before ,
+.fa-music:before,
+.fa-book-open:before{
+    content: "\f19d";
+    padding: 1rem;
+  }
+.navbar-brand{
+  font-family: Agustina;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar{
+  color:#000000;
+  background-color: #fff;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.love {
+	background-color: #E7273F;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	font-family: 'Muli';
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	margin: 25px;
+	width: 350px;
+}
+
+.love:focus {
+	outline: none;
+}
+
+.love .icon-container {
+	background-color: #fff;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-right: 1px solid #eee;
+	color: #E7273F;
+	padding: 20px 25px;
+	position: relative;
+}
+
+.love .textt {
+	padding: 0 25px;
+	flex: 1;
+	text-align: center;
+}
+
+.love .grey-text {
+	display: block;
+	color: #aaa;
+	font-size: 12px;
+}
+
+.fa-redo {
+	margin-left: 10px;
+}
+
+.heart {
+	position: absolute;
+	color: #E7273F;
+	font-size: 15px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: fly 3s linear forwards;
+}
+
+@keyframes fly {
+	to {
+		transform: translate(-50%, -50px);
+	}
+}
+
+
+.panda {
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	height: 170px;
+	width: 170px;
+}
+
+.panda .ear {
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+}
+
+.panda .ear.left {
+	left: 0;
+}
+
+.panda .ear.right {
+	right: 0;
+}
+
+.panda .eye {
+	background-color: #000;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	height: 50px;
+	width: 40px;
+}
+
+.panda .eye.left {
+	border-radius: 100% 60% 80% 60%;
+	transform: translateX(calc(-50% - 35px));
+}
+
+.panda .eye.right {
+	border-radius: 60% 100% 60% 80%;
+	transform: translateX(calc(-50% + 35px));
+}
+
+.panda .eye .eye-roll {
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 12px;
+	width: 12px;
+	transform-origin: center left;
+}
+
+.panda .nose {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.panda .mouth {
+	background: transparent;
+	border-radius: 0 0 50% 50%;
+	border: 2px solid transparent;
+	border-bottom: 2px solid #000;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%);
+	height: 50px;
+	width: 50px;
+}
+
+/* Footer Area css
+============================================================================================ */
+.footer_area {
+  background: #000; }
+
+.f_title {
+  margin-bottom: 35px; }
+  .f_title h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 0px; }
+
+.ab_widget p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 30px; }
+  .ab_widget p a {
+    color: #766dff; }
+  .ab_widget p + p {
+    margin-bottom: 0px; }
+
+.news_widget {
+  padding-right: 15px; }
+  .news_widget p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    margin-bottom: 15px; }
+  .news_widget .input-group input {
+    height: 40px;
+    background: transparent;
+    border-radius: 0px;
+    width: 80%;
+    border: none;
+    padding: 0px 15px;
+    border: 1px solid #1e233b;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #cccccc;
+    outline: none;
+    box-shadow: none; }
+    .news_widget .input-group input.placeholder {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      color: #cccccc; }
+    .news_widget .input-group input:-moz-placeholder {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      color: #cccccc; }
+    .news_widget .input-group input::-moz-placeholder {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      color: #cccccc; }
+    .news_widget .input-group input::-webkit-input-placeholder {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      color: #cccccc; }
+  .news_widget .input-group .sub-btn {
+    border-radius: 0px;
+    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0px;
+    border: none;
+    width: 42px;
+    cursor: pointer;
+    color: #fff; }
+
+.social_widget p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 10px; }
+.social_widget .list li {
+  margin-right: 17px;
+  display: inline-block; }
+  .social_widget .list li a {
+    color: #cccccc;
+    font-size: 14px;
+    transition: all 300ms linear 0s; }
+  .social_widget .list li:last-child {
+    margin-right: 0px; }
+  .social_widget .list li:hover a {
+    color: #766dff; }
+
+.copy_right_text {
+  text-align: center;
+  margin-top: 60px; }
+  .copy_right_text p a {
+    color: #766dff; }
+
+		.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+/* End Footer Area css
+============================================================================================ */
+/*---------------------------------------------------- */
